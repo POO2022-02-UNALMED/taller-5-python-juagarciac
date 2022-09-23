@@ -11,12 +11,9 @@ class Mamifero(Animal):
         self.listado.append(self)
     def cantidadMamifero(self):
         return len(self.listado)
-    def crearCaballo(self,nombre,edad,sexo):
-        p=nombre
-        s=edad
-        x=sexo
+    def crearCaballo(self,nombre,edad):
         Mamifero.caballos+=1
-        return Mamifero(p,s,"pradera",x,True,4)
+        return Mamifero(nombre,edad,"pradera","m",True,4)
     def crearLeon(self,nombre,edad,sexo):
         self.leones+=1
         return Mamifero(nombre,edad,"selva",sexo,True,4)
