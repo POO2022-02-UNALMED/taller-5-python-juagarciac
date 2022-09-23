@@ -17,8 +17,9 @@ class Animal:
             return "Mi nombre es "+self.nombre+", tengo una edad de "+str(self.edad)+", habito en "+self.habitat+" y mi genero es "+self.genero+", la zona en la que me ubico es "+self.zona.getNombre+", en el "+self.zona.getZoo
         else:
             return "Mi nombre es "+self.nombre+", tengo una edad de "+str(self.edad)+", habito en "+self.habitat+" y mi genero es "+self.genero
-    def totalPorTipo(self):
-        return "Mamiferos: "+str(self.mamifero)+"\nAves: "+str(self.reptil)+"\nReptiles: "+str(self.reptil)+"\nPeces: "+str(self.pez)+"\nAnfibios: "+str(self.anfibio)
+    @classmethod
+    def totalPorTipo(cls):
+        return "Mamiferos: "+str(cls.mamifero)+"\nAves: "+str(cls.reptil)+"\nReptiles: "+str(cls.reptil)+"\nPeces: "+str(cls.pez)+"\nAnfibios: "+str(cls.anfibio)
     def movimiento(self):
         return "desplazarse"
     def getNombre(self):

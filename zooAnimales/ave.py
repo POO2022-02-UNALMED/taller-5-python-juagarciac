@@ -13,7 +13,7 @@ class Ave(Animal):
     def crearHalcon(nombre,edad,sexo):
         Ave.halcones+=1
         return Ave(nombre,edad,"montanas",sexo,"cafe glorioso")
-    def crearAguilas(nombre,edad,sexo):
+    def crearAguila(nombre,edad,sexo):
         Ave.aguilas+=1
         return Ave(nombre,edad,"montanas",sexo,"blanco y amarillo")
     def movimiento(self):
