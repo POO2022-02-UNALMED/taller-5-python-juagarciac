@@ -19,7 +19,7 @@ class Animal:
             return "Mi nombre es "+self.nombre+", tengo una edad de "+str(self.edad)+", habito en "+self.habitat+" y mi genero es "+self.genero
     @classmethod
     def totalPorTipo(cls):
-        return "Mamiferos: "+str(cls.mamifero)+"\nAves: "+str(cls.reptil)+"\nReptiles: "+str(cls.reptil)+"\nPeces: "+str(cls.pez)+"\nAnfibios: "+str(cls.anfibio)
+        return "Mamiferos: "+str(cls.mamifero)+"\nAves: "+str(cls.ave)+"\nReptiles: "+str(cls.reptil)+"\nPeces: "+str(cls.pez)+"\nAnfibios: "+str(cls.anfibio)
     def movimiento(self):
         return "desplazarse"
     def getNombre(self):
