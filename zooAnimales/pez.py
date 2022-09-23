@@ -13,10 +13,10 @@ class Pez(Animal):
     def cantidadPeces(self):
         return len(self.listado)
     def crearSalmon(nombre,edad,sexo):
-        Pez.salmon+=1
+        Pez.salmones+=1
         return Pez(nombre,edad,"oceano",sexo,"rojo",6)
     def crearBacalao(nombre,edad,sexo):
-        Pez.bacalao+=1
+        Pez.bacalaos+=1
         return Pez(nombre,edad,"oceano",sexo,"gris",6)
     def movimiento(self):
         return "nadar"
