@@ -10,11 +10,11 @@ class Ave(Animal):
         self.listado.append(self)
     def cantidadAves(self):
         return len(self.listado)
-    def crearHalcon(self,nombre,edad,sexo):
-        self.halcones+=1
+    def crearHalcon(nombre,edad,sexo):
+        Ave.halcones+=1
         return Ave(nombre,edad,"montanas",sexo,"cafe glorioso")
-    def crearAguilas(self,nombre,edad,sexo):
-        self.aguilas+=1
+    def crearAguilas(nombre,edad,sexo):
+        Ave.aguilas+=1
         return Ave(nombre,edad,"montanas",sexo,"blanco y amarillo")
     def movimiento(self):
         return "volar"

@@ -11,11 +11,11 @@ class Reptil(Animal):
         self.listado.append(self)
     def cantidadReptiles(self):
         return len(self.listado)
-    def crearIguana(self,nombre,edad,sexo):
-        self.iguanas+=1
+    def crearIguana(nombre,edad,sexo):
+        Reptil.iguanas+=1
         return Reptil(nombre,edad,"humedal",sexo,"verde",3)
-    def crearSerpiente(self,nombre,edad,sexo):
-        self.serpientes+=1
+    def crearSerpiente(nombre,edad,sexo):
+        Reptil.serpientes+=1
         return Reptil(nombre,edad,"humedal",sexo,"blanco",1)
     def movimiento(self):
         return "reptar"

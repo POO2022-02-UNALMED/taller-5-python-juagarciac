@@ -1,3 +1,4 @@
+import this
 from zooAnimales.animal import Animal
 class Mamifero(Animal):
     listado=[]
@@ -14,8 +15,8 @@ class Mamifero(Animal):
     def crearCaballo(nombre,edad,sexo):
         Mamifero.caballos+=1
         return Mamifero(nombre,edad,"pradera",sexo,True,4)
-    def crearLeon(self,nombre,edad,sexo):
-        self.leones+=1
+    def crearLeon(nombre,edad,sexo):
+        Mamifero.leones+=1
         return Mamifero(nombre,edad,"selva",sexo,True,4)
     def isPelaje(self):
         return self.pelaje
